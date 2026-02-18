@@ -12,6 +12,10 @@
 - **検索・ソート**: キーワード、カテゴリ、期限切れ、アーカイブを含む検索に対応。
 - <img width="1866" height="814" alt="image" src="https://github.com/user-attachments/assets/43d85f6d-650b-4466-a8ed-a81567531728" />
 
+## 🛠 開発環境
+- **Todoアプリトップ**: http://localhost/
+- **アーカイブ一覧**: http://localhost/todos/archived
+- **カテゴリー一覧**: http://localhost/categories
 
 ## 🛠 使用技術
 - **Backend**: PHP 8.x / Laravel 10.x
