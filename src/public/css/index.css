@@ -1,0 +1,350 @@
+  .todo__alert--success {
+      padding: 10px 30px;
+      border-color: #badbcc;
+      background-color: #d1e7dd;
+      color: #0f5132;
+  }
+
+  .todo__alert--danger {
+      padding: 10px 0;
+      border-color: #f5c2c7;
+      background-color: #f8d7da;
+      color: #842029;
+  }
+
+  .todo__alert--danger ul {
+      margin: 0;
+  }
+
+  .todo__content {
+      margin: 0 auto;
+      padding: 30px 15px;
+      max-width: 1230px;
+  }
+
+  .section__title {
+      margin: 0 auto;
+      width: 70%;
+
+  }
+
+  .create-form,
+  .search-form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* 縦方向の真ん中揃え */
+      gap: 15px;
+      /* 要素間の隙間を一括設定 */
+      margin: 0 auto 20px;
+      width: 70%;
+      /* 全体の幅を少し広げると余裕が出ます */
+  }
+
+  .create-form__item,
+  .search-form__item {
+      display: flex;
+      
+        flex: 1;
+        /* 3つの入力欄の合計幅 */
+        gap: 20px;
+  }
+
+  .create-form__item-input,
+  .search-form__item-input, 
+  .create-form__item-date,
+  .update-form__item-date
+    {
+      margin-right: 10px;
+      padding: 10px;
+
+      width: 60%;
+      height: 40px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+  }
+  
+
+  .create-form__item-select,
+  .search-form__item-select {
+      padding: 10px;
+      width: 30%;
+      height: 40px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      appearance: none;
+
+  }
+
+  .create-form__button,
+  .search-form__button {
+      width: 20%;
+  }
+
+  .create-form__button-submit,
+  .search-form__button-submit {
+      padding: 10px;
+      width: 100%;
+      height: 40px;
+      border: none;
+      border-radius: 3px;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  .todo-table {
+      margin: 30px auto;
+      width: 70%;
+      text-align: center;
+  }
+
+  .todo-table__inner {
+      width: 100%;
+  }
+
+  .todo-table__row {
+      border-bottom: 1px solid #ddd;
+  }
+  
+    .row-danger {
+        background-color: #f8d7da !important;
+        /* 薄い赤 */
+    }
+
+    /* 本日が期限（黄・オレンジ系） */
+    .row-warning {
+        background-color: #fff3cd !important;
+        /* 薄い黄 */
+    }
+
+    /* ホバーした時に少し濃くするとさらに使いやすいです */
+    .row-danger:hover {
+        background-color: #f5c2c7 !important;
+    }
+
+  .todo-table__header {
+      padding: 12px;
+      width: 100%;
+      text-align: left;
+      font-weight: bold;
+  }
+
+  .todo-table__header-span {
+      margin-right: 0;
+
+  }
+
+  /* 理想の比率に合わせる（合計で100%にする） */
+  .todo-table__header-span:nth-child(1) {
+      width: 32%;
+      display: inline-block;
+  }
+
+  /* Todo */
+  .todo-table__header-span:nth-child(2) {
+      width: 18%;
+      display: inline-block;
+  }
+
+  /* カテゴリ */
+  .todo-table__header-span:nth-child(3) {
+      width: 30%;
+      display: inline-block;
+  }
+
+  /* 期限 */
+  .todo-table__item {
+      padding-top: 25px;
+      /* バッジが収まるように上の余白を広くする */
+      padding-bottom: 10px;
+      vertical-align: bottom;
+      /* 文字が下揃えになるようにする */
+  }
+
+  .todo-content__wrapper {
+      position: relative;
+      /* バッジの位置を自由に決めるための基準点 */
+  }
+
+  /* バッジ共通スタイル */
+  .badge {
+      position: absolute;
+      /* 親要素（wrapper）を基準に浮かせる */
+      top: -22px;
+      /* 文字の少し上に配置 */
+      left: 0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: bold;
+      color: white;
+      white-space: nowrap;
+      /* 改行させない */
+  }
+
+  .badge--danger {
+      background-color: #ff4d4d;
+      /* 赤色 */
+  }
+
+  .badge--warning {
+      background-color: #ffad33;
+      /* オレンジ色 */
+  }
+
+  /* 期限切れの時の日付入力欄の文字色も変えるとさらに親切 */
+  .is-overdue .update-form__item-date {
+      color: #ff4d4d;
+      font-weight: bold;
+  }
+
+  .todo-table__item:first-of-type {
+      padding: 12px;
+      width: 90%;
+  }
+
+
+  .update-form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .update-form__item {
+      width: 20%;
+      line-height: 50%;
+  }
+
+  /* ヘッダーの幅と数値を合わせるのがコツです！ */
+  .update-form__item:nth-of-type(1) {
+      width: 25%;
+  }
+
+  /* Todo入力欄 */
+  .update-form__item:nth-of-type(2) {
+      width: 20%;
+  }
+
+  /* カテゴリ名表示 */
+  .update-form__item:nth-of-type(3) {
+      width: 30%;
+  }
+
+  /* 期限入力欄 */
+
+  /* ボタンを右端に寄せる設定 */
+  .update-form__button {
+      width: 50px;
+      margin-left: auto;
+      /* ★これでボタンが右端に吸い寄せられます */
+  }
+
+  .update-form__item-input {
+      width: 100%;
+      outline: none;
+      border: none;
+  }
+
+  .update-form__item-p {
+      text-align: left;
+      font-size: 13px;
+
+  }
+
+  .update-form__button-submit {
+      padding: 5px;
+      width: 100%;
+      border: none;
+      border-radius: 3px;
+      background: #0000ff;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  .delete-form__button {
+      width: 50px;
+  }
+
+  .delete-form__button-submit {
+      padding: 5px;
+      width: 100%;
+      border: none;
+      border-radius: 3px;
+      background: #ff0000;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  /* 期限切れの行の背景を薄い赤にする */
+  .is-overdue {
+      background-color: #fff5f5;
+  }
+
+  /* 期限切れのタスクの入力欄を強調する */
+  .is-overdue .update-form__item-input {
+      color: #e3342f;
+      /* 赤色 */
+  }
+
+  /* 警告ラベルなどを出したい場合（オプション） */
+  .is-overdue .update-form__item-date::before {
+      content: "⚠️ 期限切れ";
+      display: block;
+      font-size: 10px;
+      color: #e3342f;
+  }
+
+  /* 三本線アイコンの形 */
+  .menu__icon {
+      cursor: pointer;
+      width: 30px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .menu__icon span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: #fff;
+      /* 背景が黒なら白 */
+      transition: 0.3s;
+  }
+
+  /* メニューのリスト（最初は非表示） */
+  .menu__nav {
+      display: none;
+      position: absolute;
+      right: 20px;
+      top: 60px;
+      background-color: #333;
+      border-radius: 5px;
+      padding: 10px;
+      z-index: 100;
+  }
+
+  /* JSでこのクラスを付け外しして表示させる */
+  .menu__nav.is-active {
+      display: block;
+  }
+
+  .menu__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .menu__list li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+      white-space: nowrap;
+  }
+
+  .menu__list li a:hover {
+      background-color: #444;
+  }
