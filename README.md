@@ -6,8 +6,6 @@
 
 ## 📸 デモ画面
 <img width="1866" height="814" alt="image" src="https://github.com/user-attachments/assets/43d85f6d-650b-4466-a8ed-a81567531728" />
-![Uploading image.png…]()
-
 
 ## ✨ 主な機能
 - **ToDo管理**: 登録、編集、削除の基本機能。
